@@ -13,7 +13,8 @@
     <body>
         <div class="form-container">
             <h1 style="text-align: center; color: rgb(243, 232, 20);">Log in page for Customers</h1>
-            <form id="Log-In-Customer-form">
+            <p class="error-message" style="color: var(--danger);"></p>
+            <form id="Log-In-form" action="">
                 <div>
                     <label for="name">UserName:</label>
                     <input type="text" maxlength="8" name="name" id="name" />
@@ -30,5 +31,8 @@
                 <a href="" style="color: black;">Register if you Don't have account</a>
             </form>
         </div>
+
+        <script src="js/validations.js"></script>
+        <script src="js/Log_In.js"></script>
     </body>
 </html>

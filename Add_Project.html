@@ -25,7 +25,8 @@
         </div>
         <div class="form-container">
             <h1 style="text-align: center; color: rgb(243, 232, 20);">Register page for Customers</h1>
-            <form id="Register-Customer-form" action="Log_In_Customer.html">
+            <p class="error-message" style="color: var(--danger);"></p>
+            <form id="Add-form">
                 <div>
                     <label for="name">Name Of Project:</label>
                     <input type="text" maxlength="30" name="name" id="name" />
@@ -43,7 +44,7 @@
 
                 <div>
                     <label for="name">Description of project:</label>
-                    <textarea placeholder="Description of project"></textarea>
+                    <textarea placeholder="Description of project" id="description"></textarea>
                 </div>
 
                 <div class="form-button-container">
@@ -51,5 +52,8 @@
                 </div>
             </form>
         </div>
+
+        <script src="js/validations.js"></script>
+        <script src="js/Add_Project.js"></script>
     </body>
 </html>

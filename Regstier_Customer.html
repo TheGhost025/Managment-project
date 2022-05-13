@@ -13,32 +13,43 @@
     <body>
         <div class="form-container">
             <h1 style="text-align: center; color: rgb(243, 232, 20);">Register page for Customers</h1>
+            <p class="error-message" style="color: var(--danger);"></p>
             <form id="Register-Customer-form" action="Log_In_Customer.html">
                 <div>
-                    <label for="id">UserName:</label>
-                    <input type="text" maxlength="8" name="id" id="id" />
+                    <label for="name">UserName:</label>
+                    <input type="text" maxlength="10" name="name" id="name" />
                 </div>
 
                 <div>
-                    <label for="name">Password:</label>
-                    <input type="password" maxlength="30" name="name" id="name" />
+                    <label for="password">Password:</label>
+                    <input type="password" maxlength="30" name="password" id="password" />
                 </div>
 
                 <div>
-                    <label for="name">Email:</label>
-                    <input type="text" maxlength="30" name="Email" id="Email" />
+                    <label for="email">Email:</label>
+                    <input type="text" maxlength="30" name="email" id="email" />
                 </div>
 
                 <div>
-                    <label for="name">Phone Number:</label>
+                    <label for="Pnum">Phone Number:</label>
                     <input type="text" maxlength="30" name="Pnum" id="Pnum" />
                 </div>
 
                 <div class="form-button-container">
                     <button type="submit">Register</button>
                 </div>
-                <a href="" style="color: black;">Register if you Don't have account</a>
+
+                <div id="message">
+                    <h3>Password must contain the following:</h3>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
             </form>
         </div>
+
+        <script src="js/validations.js"></script>
+        <script src="js/Register_Customer.js"></script>
     </body>
 </html>

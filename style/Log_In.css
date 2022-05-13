@@ -79,10 +79,6 @@
     border-radius: 5%;
     text-align: left;
     width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     gap: 16px;
     opacity: 0;
     -webkit-animation: slide-up 700ms ease-out forwards;
@@ -142,7 +138,41 @@
     display: block;
   }
   
+  #message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
   
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+  }
   
   @media screen and (min-width: 768px) {
     form {

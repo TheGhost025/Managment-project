@@ -13,15 +13,16 @@
     <body>
         <div class="form-container">
             <h1 style="text-align: center; color: rgb(243, 232, 20);">Log in page for Companies</h1>
+            <p class="error-message" style="color: var(--danger);"></p>
             <form id="Log-In-Company-form" action="Profile_Page_Company.html">
                 <div>
-                    <label for="id">UserName:</label>
-                    <input type="text" maxlength="8" name="id" id="id" />
+                    <label for="name">UserName:</label>
+                    <input type="text" maxlength="8" name="name" id="name" />
                 </div>
 
                 <div>
-                    <label for="name">Password:</label>
-                    <input type="password" maxlength="30" name="name" id="name" />
+                    <label for="password">Password:</label>
+                    <input type="password" maxlength="30" name="password" id="password" />
                 </div>
 
                 <div class="form-button-container">
@@ -30,5 +31,9 @@
                 <a href="" style="color: black;">Register if you Don't have account</a>
             </form>
         </div>
+
+
+        <script src="js/validations.js"></script>
+        <script src="js/Log_In.js"></script>
     </body>
 </html>
