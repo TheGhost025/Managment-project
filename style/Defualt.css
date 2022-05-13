@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Encode+Sans&family=Lora&family=Montserrat:wght@300&display=swap");
+
+body {
+    background-color: rgb(17, 17, 17);
+}
+
+.nav {
+  color: var(--gold);
+  text-decoration: none;
+  -webkit-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+  font-weight: 500;
+}
+
+.nav-bar {
+  padding: 12px 0 56px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.nav-bar .navs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 32px;
+    padding: 24px var(--padding-inline-lg) 56px var(--padding-inline-lg);
+  }
+}
+
+.nav:hover, .nav-active {
+  color: var(--primary);
+}
+
+:root {
+  /* colors */
+  --primary: rgb(255, 255, 255);
+  --light-primary: rgb(17, 17, 17);
+  --gold: rgb(243, 232, 20);
+  --light-gray: rgb(186, 168, 168);
+  --danger: rgb(231, 64, 64);
+  /*spacing*/
+  --padding-inline: 24px;
+  --padding-inline-lg: 56px;
+}
+
+body {
+  margin: 0;
+  font-family: "Lora", serif;
+  color: var(--dark);
+  padding-bottom: 32px;
+}
