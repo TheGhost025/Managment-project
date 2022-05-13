@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./asset/Logo.jpeg" />
+        <title>FCAI Home</title>
+        <link rel="stylesheet" href="./style/Defualt.css" />
+        <link rel="stylesheet" href="./style/Add_Project.css" />
+    </head>
+    
+    <body>
+        <div class="nav-bar">
+            <img src="./asset/Logo.jpeg" alt="Logo" style="height: 80px" />
+            <div class="navs">
+                <div class="box">
+                    <a href="" class="nav">Profile</a>
+                </div>
+                <div class="box">
+                    <a href="" class="nav nav-active">Add Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <h1 style="text-align: center; color: rgb(243, 232, 20);">Register page for Customers</h1>
+            <form id="Register-Customer-form" action="Log_In_Customer.html">
+                <div>
+                    <label for="name">Name Of Project:</label>
+                    <input type="text" maxlength="30" name="name" id="name" />
+                </div>
+
+                <div>
+                    <label for="price">Price:</label>
+                    <input type="number" name="price" id="price" />
+                </div>
+
+                <div>
+                    <label for="image">Image:</label>
+                    <input type="file" name="image" id="image" />
+                </div>
+
+                <div>
+                    <label for="name">Description of project:</label>
+                    <textarea placeholder="Description of project"></textarea>
+                </div>
+
+                <div class="form-button-container">
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

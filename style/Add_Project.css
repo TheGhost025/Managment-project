@@ -1,0 +1,164 @@
+@-webkit-keyframes slide-up {
+    from {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .form-container {
+    padding: 5px var(--padding-inline);
+    overflow-y: hidden;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .form-container {
+      padding: 5px var(--padding-inline-lg);
+      margin: 0 auto;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+  }
+  
+  .form-button-container {
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .form-button-container {
+      -ms-grid-column-span: 2;
+          grid-column-end: span 2;
+    }
+  }
+  
+  form {
+    background-color: var(--primary);
+    color: black;
+    border-radius: 5%;
+    text-align: left;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 16px;
+    opacity: 0;
+    -webkit-animation: slide-up 700ms ease-out forwards;
+            animation: slide-up 700ms ease-out forwards;
+  }
+  
+  form button {
+    width: 100%;
+    margin-top: 12px;
+    color: var(--gold);
+    border-radius: 5px;
+    background-color: var(--light-primary);
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-weight: bold;
+    -webkit-transition: 250ms ease-out;
+    transition: 250ms ease-out;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: rgb(186, 168, 168);
+  }
+  
+  @media screen and (min-width: 768px) {
+    form button {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 16px 32px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    form button {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+  }
+  
+  form input {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    outline: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  
+  form label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  @media screen and (min-width: 768px) {
+    form {
+      width: 700px;
+      border-radius: 5px;
+      padding: 32px;
+      -webkit-box-shadow: 0 0 5px silver;
+              box-shadow: 0 0 5px silver;
+      -ms-grid-columns: 1fr;
+          grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
